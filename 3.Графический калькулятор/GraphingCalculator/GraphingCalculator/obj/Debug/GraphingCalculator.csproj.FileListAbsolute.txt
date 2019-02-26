@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\GraphingCalculator\GraphingCalculator\bin\Debug\GraphingCalculator.exe.config
+C:\Users\User\source\repos\GraphingCalculator\GraphingCalculator\bin\Debug\GraphingCalculator.exe
+C:\Users\User\source\repos\GraphingCalculator\GraphingCalculator\bin\Debug\GraphingCalculator.pdb
+C:\Users\User\source\repos\GraphingCalculator\GraphingCalculator\obj\Debug\GraphingCalculator.csprojAssemblyReference.cache
+C:\Users\User\source\repos\GraphingCalculator\GraphingCalculator\obj\Debug\GraphingCalculator.Form1.resources
+C:\Users\User\source\repos\GraphingCalculator\GraphingCalculator\obj\Debug\GraphingCalculator.Properties.Resources.resources
+C:\Users\User\source\repos\GraphingCalculator\GraphingCalculator\obj\Debug\GraphingCalculator.csproj.GenerateResource.cache
+C:\Users\User\source\repos\GraphingCalculator\GraphingCalculator\obj\Debug\GraphingCalculator.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\GraphingCalculator\GraphingCalculator\obj\Debug\GraphingCalculator.exe
+C:\Users\User\source\repos\GraphingCalculator\GraphingCalculator\obj\Debug\GraphingCalculator.pdb

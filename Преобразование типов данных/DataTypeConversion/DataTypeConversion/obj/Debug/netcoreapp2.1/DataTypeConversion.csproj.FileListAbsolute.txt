@@ -1,0 +1,11 @@
+C:\Users\User\source\repos\Преобразование типов данных\DataTypeConversion\DataTypeConversion\bin\Debug\netcoreapp2.1\DataTypeConversion.deps.json
+C:\Users\User\source\repos\Преобразование типов данных\DataTypeConversion\DataTypeConversion\bin\Debug\netcoreapp2.1\DataTypeConversion.runtimeconfig.json
+C:\Users\User\source\repos\Преобразование типов данных\DataTypeConversion\DataTypeConversion\bin\Debug\netcoreapp2.1\DataTypeConversion.runtimeconfig.dev.json
+C:\Users\User\source\repos\Преобразование типов данных\DataTypeConversion\DataTypeConversion\bin\Debug\netcoreapp2.1\DataTypeConversion.dll
+C:\Users\User\source\repos\Преобразование типов данных\DataTypeConversion\DataTypeConversion\bin\Debug\netcoreapp2.1\DataTypeConversion.pdb
+C:\Users\User\source\repos\Преобразование типов данных\DataTypeConversion\DataTypeConversion\obj\Debug\netcoreapp2.1\DataTypeConversion.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Преобразование типов данных\DataTypeConversion\DataTypeConversion\obj\Debug\netcoreapp2.1\DataTypeConversion.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Преобразование типов данных\DataTypeConversion\DataTypeConversion\obj\Debug\netcoreapp2.1\DataTypeConversion.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Преобразование типов данных\DataTypeConversion\DataTypeConversion\obj\Debug\netcoreapp2.1\DataTypeConversion.AssemblyInfo.cs
+C:\Users\User\source\repos\Преобразование типов данных\DataTypeConversion\DataTypeConversion\obj\Debug\netcoreapp2.1\DataTypeConversion.dll
+C:\Users\User\source\repos\Преобразование типов данных\DataTypeConversion\DataTypeConversion\obj\Debug\netcoreapp2.1\DataTypeConversion.pdb

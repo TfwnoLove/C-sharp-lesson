@@ -1,0 +1,11 @@
+C:\Users\User\source\repos\Кортежи\Tuples\Tuples\bin\Debug\netcoreapp2.1\Tuples.deps.json
+C:\Users\User\source\repos\Кортежи\Tuples\Tuples\bin\Debug\netcoreapp2.1\Tuples.runtimeconfig.json
+C:\Users\User\source\repos\Кортежи\Tuples\Tuples\bin\Debug\netcoreapp2.1\Tuples.runtimeconfig.dev.json
+C:\Users\User\source\repos\Кортежи\Tuples\Tuples\bin\Debug\netcoreapp2.1\Tuples.dll
+C:\Users\User\source\repos\Кортежи\Tuples\Tuples\bin\Debug\netcoreapp2.1\Tuples.pdb
+C:\Users\User\source\repos\Кортежи\Tuples\Tuples\obj\Debug\netcoreapp2.1\Tuples.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Кортежи\Tuples\Tuples\obj\Debug\netcoreapp2.1\Tuples.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Кортежи\Tuples\Tuples\obj\Debug\netcoreapp2.1\Tuples.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Кортежи\Tuples\Tuples\obj\Debug\netcoreapp2.1\Tuples.AssemblyInfo.cs
+C:\Users\User\source\repos\Кортежи\Tuples\Tuples\obj\Debug\netcoreapp2.1\Tuples.dll
+C:\Users\User\source\repos\Кортежи\Tuples\Tuples\obj\Debug\netcoreapp2.1\Tuples.pdb

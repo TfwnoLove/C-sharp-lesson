@@ -1,0 +1,11 @@
+C:\Users\User\source\repos\Сортировка массивов\SortingArrays\SortingArrays\bin\Debug\netcoreapp2.1\SortingArrays.deps.json
+C:\Users\User\source\repos\Сортировка массивов\SortingArrays\SortingArrays\bin\Debug\netcoreapp2.1\SortingArrays.runtimeconfig.json
+C:\Users\User\source\repos\Сортировка массивов\SortingArrays\SortingArrays\bin\Debug\netcoreapp2.1\SortingArrays.runtimeconfig.dev.json
+C:\Users\User\source\repos\Сортировка массивов\SortingArrays\SortingArrays\bin\Debug\netcoreapp2.1\SortingArrays.dll
+C:\Users\User\source\repos\Сортировка массивов\SortingArrays\SortingArrays\bin\Debug\netcoreapp2.1\SortingArrays.pdb
+C:\Users\User\source\repos\Сортировка массивов\SortingArrays\SortingArrays\obj\Debug\netcoreapp2.1\SortingArrays.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Сортировка массивов\SortingArrays\SortingArrays\obj\Debug\netcoreapp2.1\SortingArrays.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Сортировка массивов\SortingArrays\SortingArrays\obj\Debug\netcoreapp2.1\SortingArrays.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Сортировка массивов\SortingArrays\SortingArrays\obj\Debug\netcoreapp2.1\SortingArrays.AssemblyInfo.cs
+C:\Users\User\source\repos\Сортировка массивов\SortingArrays\SortingArrays\obj\Debug\netcoreapp2.1\SortingArrays.dll
+C:\Users\User\source\repos\Сортировка массивов\SortingArrays\SortingArrays\obj\Debug\netcoreapp2.1\SortingArrays.pdb

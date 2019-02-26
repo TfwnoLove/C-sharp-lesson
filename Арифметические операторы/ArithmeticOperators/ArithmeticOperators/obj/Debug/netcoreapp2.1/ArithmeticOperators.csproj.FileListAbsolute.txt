@@ -1,0 +1,11 @@
+C:\Users\User\source\repos\Арифметические операторы\ArithmeticOperators\ArithmeticOperators\bin\Debug\netcoreapp2.1\ArithmeticOperators.deps.json
+C:\Users\User\source\repos\Арифметические операторы\ArithmeticOperators\ArithmeticOperators\bin\Debug\netcoreapp2.1\ArithmeticOperators.runtimeconfig.json
+C:\Users\User\source\repos\Арифметические операторы\ArithmeticOperators\ArithmeticOperators\bin\Debug\netcoreapp2.1\ArithmeticOperators.runtimeconfig.dev.json
+C:\Users\User\source\repos\Арифметические операторы\ArithmeticOperators\ArithmeticOperators\bin\Debug\netcoreapp2.1\ArithmeticOperators.dll
+C:\Users\User\source\repos\Арифметические операторы\ArithmeticOperators\ArithmeticOperators\bin\Debug\netcoreapp2.1\ArithmeticOperators.pdb
+C:\Users\User\source\repos\Арифметические операторы\ArithmeticOperators\ArithmeticOperators\obj\Debug\netcoreapp2.1\ArithmeticOperators.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Арифметические операторы\ArithmeticOperators\ArithmeticOperators\obj\Debug\netcoreapp2.1\ArithmeticOperators.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Арифметические операторы\ArithmeticOperators\ArithmeticOperators\obj\Debug\netcoreapp2.1\ArithmeticOperators.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Арифметические операторы\ArithmeticOperators\ArithmeticOperators\obj\Debug\netcoreapp2.1\ArithmeticOperators.AssemblyInfo.cs
+C:\Users\User\source\repos\Арифметические операторы\ArithmeticOperators\ArithmeticOperators\obj\Debug\netcoreapp2.1\ArithmeticOperators.dll
+C:\Users\User\source\repos\Арифметические операторы\ArithmeticOperators\ArithmeticOperators\obj\Debug\netcoreapp2.1\ArithmeticOperators.pdb

@@ -1,0 +1,11 @@
+C:\Users\User\source\repos\2.Консольный калькулятор\ConsoleCalculator\ConsoleCalculator\bin\Debug\netcoreapp2.1\ConsoleCalculator.deps.json
+C:\Users\User\source\repos\2.Консольный калькулятор\ConsoleCalculator\ConsoleCalculator\bin\Debug\netcoreapp2.1\ConsoleCalculator.runtimeconfig.json
+C:\Users\User\source\repos\2.Консольный калькулятор\ConsoleCalculator\ConsoleCalculator\bin\Debug\netcoreapp2.1\ConsoleCalculator.runtimeconfig.dev.json
+C:\Users\User\source\repos\2.Консольный калькулятор\ConsoleCalculator\ConsoleCalculator\bin\Debug\netcoreapp2.1\ConsoleCalculator.dll
+C:\Users\User\source\repos\2.Консольный калькулятор\ConsoleCalculator\ConsoleCalculator\bin\Debug\netcoreapp2.1\ConsoleCalculator.pdb
+C:\Users\User\source\repos\2.Консольный калькулятор\ConsoleCalculator\ConsoleCalculator\obj\Debug\netcoreapp2.1\ConsoleCalculator.csprojAssemblyReference.cache
+C:\Users\User\source\repos\2.Консольный калькулятор\ConsoleCalculator\ConsoleCalculator\obj\Debug\netcoreapp2.1\ConsoleCalculator.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\2.Консольный калькулятор\ConsoleCalculator\ConsoleCalculator\obj\Debug\netcoreapp2.1\ConsoleCalculator.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\2.Консольный калькулятор\ConsoleCalculator\ConsoleCalculator\obj\Debug\netcoreapp2.1\ConsoleCalculator.AssemblyInfo.cs
+C:\Users\User\source\repos\2.Консольный калькулятор\ConsoleCalculator\ConsoleCalculator\obj\Debug\netcoreapp2.1\ConsoleCalculator.dll
+C:\Users\User\source\repos\2.Консольный калькулятор\ConsoleCalculator\ConsoleCalculator\obj\Debug\netcoreapp2.1\ConsoleCalculator.pdb

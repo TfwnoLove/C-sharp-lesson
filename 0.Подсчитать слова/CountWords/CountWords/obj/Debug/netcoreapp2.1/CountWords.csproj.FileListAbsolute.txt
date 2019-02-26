@@ -1,0 +1,11 @@
+C:\Users\User\source\repos\0.Подсчитать слова\CountWords\CountWords\bin\Debug\netcoreapp2.1\CountWords.deps.json
+C:\Users\User\source\repos\0.Подсчитать слова\CountWords\CountWords\bin\Debug\netcoreapp2.1\CountWords.runtimeconfig.json
+C:\Users\User\source\repos\0.Подсчитать слова\CountWords\CountWords\bin\Debug\netcoreapp2.1\CountWords.runtimeconfig.dev.json
+C:\Users\User\source\repos\0.Подсчитать слова\CountWords\CountWords\bin\Debug\netcoreapp2.1\CountWords.dll
+C:\Users\User\source\repos\0.Подсчитать слова\CountWords\CountWords\bin\Debug\netcoreapp2.1\CountWords.pdb
+C:\Users\User\source\repos\0.Подсчитать слова\CountWords\CountWords\obj\Debug\netcoreapp2.1\CountWords.csprojAssemblyReference.cache
+C:\Users\User\source\repos\0.Подсчитать слова\CountWords\CountWords\obj\Debug\netcoreapp2.1\CountWords.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\0.Подсчитать слова\CountWords\CountWords\obj\Debug\netcoreapp2.1\CountWords.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\0.Подсчитать слова\CountWords\CountWords\obj\Debug\netcoreapp2.1\CountWords.AssemblyInfo.cs
+C:\Users\User\source\repos\0.Подсчитать слова\CountWords\CountWords\obj\Debug\netcoreapp2.1\CountWords.dll
+C:\Users\User\source\repos\0.Подсчитать слова\CountWords\CountWords\obj\Debug\netcoreapp2.1\CountWords.pdb

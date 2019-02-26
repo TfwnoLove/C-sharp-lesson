@@ -1,0 +1,11 @@
+C:\Users\User\source\repos\0.Подсчитать слова\ValueFunctions\ValueFunctions\bin\Debug\netcoreapp2.1\ValueFunctions.deps.json
+C:\Users\User\source\repos\0.Подсчитать слова\ValueFunctions\ValueFunctions\bin\Debug\netcoreapp2.1\ValueFunctions.runtimeconfig.json
+C:\Users\User\source\repos\0.Подсчитать слова\ValueFunctions\ValueFunctions\bin\Debug\netcoreapp2.1\ValueFunctions.runtimeconfig.dev.json
+C:\Users\User\source\repos\0.Подсчитать слова\ValueFunctions\ValueFunctions\bin\Debug\netcoreapp2.1\ValueFunctions.dll
+C:\Users\User\source\repos\0.Подсчитать слова\ValueFunctions\ValueFunctions\bin\Debug\netcoreapp2.1\ValueFunctions.pdb
+C:\Users\User\source\repos\0.Подсчитать слова\ValueFunctions\ValueFunctions\obj\Debug\netcoreapp2.1\ValueFunctions.csprojAssemblyReference.cache
+C:\Users\User\source\repos\0.Подсчитать слова\ValueFunctions\ValueFunctions\obj\Debug\netcoreapp2.1\ValueFunctions.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\0.Подсчитать слова\ValueFunctions\ValueFunctions\obj\Debug\netcoreapp2.1\ValueFunctions.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\0.Подсчитать слова\ValueFunctions\ValueFunctions\obj\Debug\netcoreapp2.1\ValueFunctions.AssemblyInfo.cs
+C:\Users\User\source\repos\0.Подсчитать слова\ValueFunctions\ValueFunctions\obj\Debug\netcoreapp2.1\ValueFunctions.dll
+C:\Users\User\source\repos\0.Подсчитать слова\ValueFunctions\ValueFunctions\obj\Debug\netcoreapp2.1\ValueFunctions.pdb
