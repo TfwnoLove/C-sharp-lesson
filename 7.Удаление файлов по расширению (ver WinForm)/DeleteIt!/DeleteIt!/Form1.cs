@@ -44,7 +44,8 @@ namespace DeleteIt_
                     foreach (FileInfo f in Files)//из найденых строим список с чекбоксами в checkedListBox1
                     {
                         label4.Text = checkedListBox1.Items.Count.ToString();//отсчет с нуля 
-                        checkedListBox1.Items.Add(f.ToString());
+                        //checkedListBox1.Items.Add(f.ToString());
+                        checkedListBox1.Items.Add(f.FullName);
                         checkedListBox1.SetSelected(0, true);
                     }
                     if (checkedListBox1.Items.Count == 0)
@@ -85,10 +86,10 @@ namespace DeleteIt_
             {
                 if (checkedListBox1.GetItemChecked(i))
                 {
-                    //File.Delete не работает. Корень всех зол.
+                    
                     var pathFile = checkedListBox1.Items[i].ToString();
                     File.Delete(pathFile);
-                    checkedListBox1.Items.RemoveAt(i);//удаляет из списка отмеченные галочкой
+                    checkedListBox1.Items.RemoveAt(i);
                 }
             }
         }        
