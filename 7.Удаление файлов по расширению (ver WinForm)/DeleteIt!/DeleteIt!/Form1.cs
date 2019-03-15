@@ -1,11 +1,14 @@
-﻿using System;
+﻿using MaterialSkin;
+using MaterialSkin.Controls;
+using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
 namespace DeleteIt_
 {
-    public partial class Form1 : Form
+    public partial class Form1 : MaterialForm
     {        
         DirectoryInfo Direction { get; set; }//автосвойство типа DirectoryInfo с именем Direction        
         FileInfo[] Files { get; set; }//автосвойство типа FileInfo с именем Files
@@ -13,10 +16,14 @@ namespace DeleteIt_
         public Form1()
         {
             InitializeComponent();
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
             textBox1.ReadOnly = true;//установить параметр textBox1 в режим Только чтение, чтобы пользователь не смог изменить путь с клавиатуры
         }
 
-        public void button1_Click(object sender, EventArgs e)
+        public void materialRaisedButton1_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog FBD = new FolderBrowserDialog();//тип FolderBrowserDialog с именем FBD позволяет открыть диалоговое окно
             FBD.ShowNewFolderButton = false;//запрет на кнопку создания новой папки
@@ -33,7 +40,7 @@ namespace DeleteIt_
         {            
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void materialRaisedButton2_Click(object sender, EventArgs e)
         {
             try{//оборачиваю в try catch на случай ошибочного пути
                 if (Direction.Exists) {//проверяем каталог на коректность, если true то...
@@ -50,9 +57,11 @@ namespace DeleteIt_
                     }
                     if (checkedListBox1.Items.Count == 0)
                     {//кнопка скана активна только если список пуст
-                        button2.Enabled= true;
+                        materialRaisedButton2.Enabled= true;
+
                     }
-                    else button2.Enabled = false;
+                    else materialRaisedButton2.Enabled = false;
+                    
                 }
             }
             catch { 
@@ -60,15 +69,17 @@ namespace DeleteIt_
             }
         }
         
-        private void button4_Click(object sender, EventArgs e)
+        private void materialRaisedButton4_Click(object sender, EventArgs e)
         {
             checkedListBox1.Items.Clear();//очистить список
             textBox1.Clear();//очистить строку с отобразившимся путём
             Direction = null;//очистить переменную которая хранит каталог 
-            button2.Enabled = true;//активировать кнопку Сканировать
+            materialRaisedButton2.Enabled = true;//активировать кнопку Сканировать
+
+           
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void materialRaisedButton3_Click(object sender, EventArgs e)
         {          //отметить всё  
                 for (int i = 0; i < checkedListBox1.Items.Count; i++)//пройтись циклом по всем элементам 
                 checkedListBox1.SetItemChecked(i, true);//и установить для каждого значение "галочку"                
@@ -80,7 +91,7 @@ namespace DeleteIt_
             */
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void materialRaisedButton5_Click(object sender, EventArgs e)
         {
             for (int i = checkedListBox1.Items.Count - 1; i >= 0; i--)//пройтись по всем элементам циклом
             {
@@ -96,5 +107,7 @@ namespace DeleteIt_
         private void textBox1_TextChanged(object sender, EventArgs e)
         {           
         }
+
+       
     }
 }
