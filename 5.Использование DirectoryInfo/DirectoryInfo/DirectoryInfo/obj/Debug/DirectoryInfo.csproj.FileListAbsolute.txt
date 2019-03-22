@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\5.Использование DirectoryInfo\DirectoryInfo\DirectoryInfo\bin\Debug\DirectoryInfo.exe.config
+C:\Users\User\source\repos\5.Использование DirectoryInfo\DirectoryInfo\DirectoryInfo\bin\Debug\DirectoryInfo.exe
+C:\Users\User\source\repos\5.Использование DirectoryInfo\DirectoryInfo\DirectoryInfo\bin\Debug\DirectoryInfo.pdb
+C:\Users\User\source\repos\5.Использование DirectoryInfo\DirectoryInfo\DirectoryInfo\obj\Debug\DirectoryInfo.csprojAssemblyReference.cache
+C:\Users\User\source\repos\5.Использование DirectoryInfo\DirectoryInfo\DirectoryInfo\obj\Debug\DirectoryInfo.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\5.Использование DirectoryInfo\DirectoryInfo\DirectoryInfo\obj\Debug\DirectoryInfo.exe
+C:\Users\User\source\repos\5.Использование DirectoryInfo\DirectoryInfo\DirectoryInfo\obj\Debug\DirectoryInfo.pdb

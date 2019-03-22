@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\6.Удаление файлов по расширению\DeleteIt\DeleteIt\bin\Debug\DeleteIt.exe.config
+C:\Users\User\source\repos\6.Удаление файлов по расширению\DeleteIt\DeleteIt\bin\Debug\DeleteIt.exe
+C:\Users\User\source\repos\6.Удаление файлов по расширению\DeleteIt\DeleteIt\bin\Debug\DeleteIt.pdb
+C:\Users\User\source\repos\6.Удаление файлов по расширению\DeleteIt\DeleteIt\obj\Debug\DeleteIt.csprojAssemblyReference.cache
+C:\Users\User\source\repos\6.Удаление файлов по расширению\DeleteIt\DeleteIt\obj\Debug\DeleteIt.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\6.Удаление файлов по расширению\DeleteIt\DeleteIt\obj\Debug\DeleteIt.exe
+C:\Users\User\source\repos\6.Удаление файлов по расширению\DeleteIt\DeleteIt\obj\Debug\DeleteIt.pdb
