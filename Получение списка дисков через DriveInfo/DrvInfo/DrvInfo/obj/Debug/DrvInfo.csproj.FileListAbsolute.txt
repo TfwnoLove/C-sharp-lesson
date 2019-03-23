@@ -1,0 +1,6 @@
+C:\Users\User\source\repos\Получение списка дисков через DriveInfo\DrvInfo\DrvInfo\bin\Debug\DrvInfo.exe.config
+C:\Users\User\source\repos\Получение списка дисков через DriveInfo\DrvInfo\DrvInfo\bin\Debug\DrvInfo.exe
+C:\Users\User\source\repos\Получение списка дисков через DriveInfo\DrvInfo\DrvInfo\bin\Debug\DrvInfo.pdb
+C:\Users\User\source\repos\Получение списка дисков через DriveInfo\DrvInfo\DrvInfo\obj\Debug\DrvInfo.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Получение списка дисков через DriveInfo\DrvInfo\DrvInfo\obj\Debug\DrvInfo.exe
+C:\Users\User\source\repos\Получение списка дисков через DriveInfo\DrvInfo\DrvInfo\obj\Debug\DrvInfo.pdb
