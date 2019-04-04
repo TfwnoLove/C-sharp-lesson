@@ -10,3 +10,4 @@ C:\Users\User\source\repos\9. Утилита разбора логов прот�
 C:\Users\User\source\repos\9. Утилита разбора логов протокола MODBUS\LogMODBUS\LogMODBUS\obj\Debug\LogMODBUS.csproj.CopyComplete
 C:\Users\User\source\repos\9. Утилита разбора логов протокола MODBUS\LogMODBUS\LogMODBUS\obj\Debug\LogMODBUS.exe
 C:\Users\User\source\repos\9. Утилита разбора логов протокола MODBUS\LogMODBUS\LogMODBUS\obj\Debug\LogMODBUS.pdb
+C:\Users\User\source\repos\9. Утилита разбора логов протокола MODBUS\LogMODBUS\LogMODBUS\bin\Debug\raw_log.xml
