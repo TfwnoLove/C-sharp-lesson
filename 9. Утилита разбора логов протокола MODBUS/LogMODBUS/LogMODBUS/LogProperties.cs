@@ -26,5 +26,9 @@ namespace LogMODBUS
         public string Command { get; set; }//46
 
         public string Crc { get; set; }//46
+
+        public string Raw_frame { get; set; }
+
+        public string Raw_data { get; set; }
     }
 }

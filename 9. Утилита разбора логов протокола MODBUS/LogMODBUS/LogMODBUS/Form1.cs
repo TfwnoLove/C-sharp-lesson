@@ -8,6 +8,8 @@ using System.Text;
 using System.Xml.Serialization;
 using System.Xml.Linq;
 using System.Data;
+using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace LogMODBUS
 {
@@ -15,8 +17,6 @@ namespace LogMODBUS
     {
         OpenFileDialog DialogWin { get; set; }
         DirectoryInfo Direction { get; set; }
-
-       
 
         public Form1()
         {
@@ -38,9 +38,7 @@ namespace LogMODBUS
                 if (DialogWin.ShowDialog() == DialogResult.OK)
                 {
                     textBox1.Text = DialogWin.FileName;
-
                     Direction = new DirectoryInfo(textBox1.Text);
-
                 }
             }
         }
@@ -55,8 +53,6 @@ namespace LogMODBUS
 
         }
 
-
-
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -66,7 +62,6 @@ namespace LogMODBUS
                 {
                     parseText();
                     button2.Enabled = true;
-                    
                 }
                 else
                 {
@@ -80,11 +75,11 @@ namespace LogMODBUS
         }
 
         public void parseText()
-        {
-            StreamReader reader = new StreamReader(Direction.FullName);
+        {           
             List<LogProperties> Tables = new List<LogProperties>();
-            //распарсить строку...
-            string logText = reader.ReadLine();
+            //взять n-ную строку           
+            string logText = GetString(0, Direction.FullName);//Direction.FullName автосвойство хранящие в себе путь к файлу
+            //распарсить строку
             string[] parsing = logText.Split(new char[] { '\t'});
 
             LogProperties logProp = new LogProperties();
@@ -94,20 +89,85 @@ namespace LogMODBUS
             logProp.AppName = parsing[2];
             logProp.IRP = parsing[3];//IRP
             logProp.Serial0 = parsing[4];//serial
-            logProp.ErrorType = parsing[5];//error
-            logProp.Length = parsing[6].Substring(0, 8); //lenth. Add substrng
-            logProp.Adress = parsing[6].Substring(10,2);
-            logProp.Command = parsing[6].Substring(13, 2);
-            logProp.Crc = parsing[6].Substring(parsing.Length + 17);
+            logProp.ErrorType = parsing[5];//error type
 
-            dataGridView1.DataSource = Tables; //create head
-            
-            string row;
-            int i = 1;
-            while ((row = reader.ReadLine()) != null) //читаем по одной линии(строке) пока не вычитаем все из потока (пока не достигнем конца файла)
+            Regex regexLength = new Regex(@"Length (\w*)");//for logProp.Length
+            var mLength = regexLength.Matches(logText);
+            foreach (Match match in mLength)
             {
-                i++;  //i укажет кол-во строк в логе              
-            }            
+                var m = match.Groups[1].Value;
+                logProp.Length = m;
+            }
+
+            Regex regexAdr = new Regex(@": (\w*)");//for logProp.Adress
+            var mAdr = regexAdr.Matches(logText);
+            foreach (Match match in mAdr)
+            {
+                var m = match.Groups[1].Value;
+                logProp.Adress = m;
+            }
+
+            Regex regexCommand = new Regex(logProp.Adress +@" (\w*)");//for logProp.Command
+            var mCom = regexCommand.Matches(logText);
+            foreach (Match match in mCom)
+            {
+                var m = match.Groups[1].Value;
+                logProp.Command = m;
+            }
+
+            string logTextCopy = GetString(0, Direction.FullName).Replace(" ", string.Empty);//
+            logProp.Crc = logTextCopy.Substring(logTextCopy.Length - 5);
+
+
+            logProp.Raw_frame = logTextCopy.Substring(logTextCopy.Length-(Convert.ToInt32(logProp.Length)*2+1));
+
+            
+            string forRdata = logProp.Raw_frame.Remove(0, 4);
+            logProp.Raw_data = forRdata.Remove(forRdata.Length - 5);
+            
+
+            //заполняю хедер
+            dataGridView1.Columns.Add(logProp.Number, "Number");
+            dataGridView1.Columns.Add(logProp.Time, "Time");
+            dataGridView1.Columns.Add(logProp.AppName, "AppName");
+            dataGridView1.Columns.Add(logProp.IRP, "IRP");
+            dataGridView1.Columns.Add(logProp.Serial0, "Serial0");
+            dataGridView1.Columns.Add(logProp.ErrorType, "ErrorType");
+            dataGridView1.Columns.Add(logProp.Length.ToString(), "Length");
+            dataGridView1.Columns.Add(logProp.Adress, "Adress");
+            dataGridView1.Columns.Add(logProp.Command, "Command");
+            dataGridView1.Columns.Add(logProp.Crc, "Crc");
+            dataGridView1.Columns.Add(logProp.Raw_frame, "Raw_frame");
+            dataGridView1.Columns.Add(logProp.Raw_data, "Raw_data");
+
+
+            //заполняю ячейки данными полученными из свойств
+            int rowNumber = dataGridView1.Rows.Add();
+            dataGridView1.Rows[rowNumber].Cells[logProp.Number].Value = logProp.Number;
+            dataGridView1.Rows[rowNumber].Cells[logProp.Time].Value = logProp.Time;
+            dataGridView1.Rows[rowNumber].Cells[logProp.AppName].Value = logProp.AppName;
+            dataGridView1.Rows[rowNumber].Cells[logProp.IRP].Value = logProp.IRP;
+            dataGridView1.Rows[rowNumber].Cells[logProp.Serial0].Value = logProp.Serial0;
+            dataGridView1.Rows[rowNumber].Cells[logProp.ErrorType].Value = logProp.ErrorType;
+            dataGridView1.Rows[rowNumber].Cells[logProp.Length].Value = logProp.Length;
+            dataGridView1.Rows[rowNumber].Cells[logProp.Adress].Value = logProp.Adress;
+            dataGridView1.Rows[rowNumber].Cells[logProp.Command].Value = logProp.Command;
+            dataGridView1.Rows[rowNumber].Cells[logProp.Crc].Value = logProp.Crc;
+            dataGridView1.Rows[rowNumber].Cells[logProp.Raw_frame].Value = logProp.Raw_frame;
+            dataGridView1.Rows[rowNumber].Cells[logProp.Raw_data].Value = logProp.Raw_data;
+        }
+        public string GetString(int numberString,string filePath)
+        {
+            IEnumerable<string> result = File.ReadLines(filePath).Skip(numberString).Take(1);
+
+            string newString = null;
+
+            foreach (string str in result)
+            {
+                newString += str;
+            }
+
+            return newString;
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
