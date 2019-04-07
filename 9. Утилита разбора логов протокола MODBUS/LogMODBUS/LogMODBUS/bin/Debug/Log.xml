@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <data source_type="com">
   <source address="Serial0" speed="unknown">
-    <line direction="request" address="FE" command="46:Read EEPROM" crc="CA6C">
-      <raw_frame>7</raw_frame>
+    <line direction="request" address="DataGridViewTextBoxCell { ColumnIndex=4, RowIndex=1 }" command="46:Read EEPROM" crc="CA6C">
+      <raw_frame></raw_frame>
     </line>
   </source>
 </data>
