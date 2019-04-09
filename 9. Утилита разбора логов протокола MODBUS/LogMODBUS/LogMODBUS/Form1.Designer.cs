@@ -28,11 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.materialContextMenuStrip1 = new MaterialSkin.Controls.MaterialContextMenuStrip();
             this.importToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.materialContextMenuStrip2 = new MaterialSkin.Controls.MaterialContextMenuStrip();
             this.importToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.materialContextMenuStrip3 = new MaterialSkin.Controls.MaterialContextMenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.importToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,53 +40,23 @@
             this.button2 = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.materialContextMenuStrip1.SuspendLayout();
-            this.materialContextMenuStrip2.SuspendLayout();
-            this.materialContextMenuStrip3.SuspendLayout();
+           
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // materialContextMenuStrip1
-            // 
-            this.materialContextMenuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialContextMenuStrip1.Depth = 0;
-            this.materialContextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.importToolStripMenuItem});
-            this.materialContextMenuStrip1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialContextMenuStrip1.Name = "materialContextMenuStrip1";
-            this.materialContextMenuStrip1.Size = new System.Drawing.Size(68, 26);
+            
             // 
             // importToolStripMenuItem
             // 
             this.importToolStripMenuItem.Name = "importToolStripMenuItem";
             this.importToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
-            // 
-            // materialContextMenuStrip2
-            // 
-            this.materialContextMenuStrip2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialContextMenuStrip2.Depth = 0;
-            this.materialContextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.importToolStripMenuItem1});
-            this.materialContextMenuStrip2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialContextMenuStrip2.Name = "materialContextMenuStrip2";
-            this.materialContextMenuStrip2.Size = new System.Drawing.Size(68, 26);
-            // 
+            
             // importToolStripMenuItem1
             // 
             this.importToolStripMenuItem1.Name = "importToolStripMenuItem1";
             this.importToolStripMenuItem1.Size = new System.Drawing.Size(67, 22);
             // 
-            // materialContextMenuStrip3
-            // 
-            this.materialContextMenuStrip3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialContextMenuStrip3.Depth = 0;
-            this.materialContextMenuStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1});
-            this.materialContextMenuStrip3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialContextMenuStrip3.Name = "materialContextMenuStrip3";
-            this.materialContextMenuStrip3.Size = new System.Drawing.Size(68, 26);
-            // 
+           
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
@@ -192,9 +159,7 @@
             this.Name = "Form1";
             this.Text = "ReadLogs";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.materialContextMenuStrip1.ResumeLayout(false);
-            this.materialContextMenuStrip2.ResumeLayout(false);
-            this.materialContextMenuStrip3.ResumeLayout(false);
+            
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -205,11 +170,9 @@
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialContextMenuStrip materialContextMenuStrip1;
+      
         private System.Windows.Forms.ToolStripMenuItem importToolStripMenuItem;
-        private MaterialSkin.Controls.MaterialContextMenuStrip materialContextMenuStrip2;
         private System.Windows.Forms.ToolStripMenuItem importToolStripMenuItem1;
-        private MaterialSkin.Controls.MaterialContextMenuStrip materialContextMenuStrip3;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem importToolStripMenuItem2;

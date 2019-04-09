@@ -76,12 +76,12 @@ namespace LogMODBUS
 
         public void parseText()
         {
-            List<LogProperties> Tables = new List<LogProperties>();
-            //взять n-ную строку           
+            List<LogProperties> Tables = new List<LogProperties>();             
             
             IEnumerable<string> result = File.ReadLines(Direction.FullName);
 
             LogProperties logProp = new LogProperties();
+
             //заполняю хедер
             dataGridView1.Columns.Add(logProp.Number, "Number");
             dataGridView1.Columns.Add(logProp.Time, "Time");
@@ -158,6 +158,7 @@ namespace LogMODBUS
                 catch {
                     logProp.Raw_data = "Error!";
                 }
+
                 //заполняю ячейки данными полученными из свойств
                 int rowNumber = dataGridView1.Rows.Add();
                 dataGridView1.Rows[rowNumber].Cells[0].Value = logProp.Number;
@@ -186,51 +187,7 @@ namespace LogMODBUS
             {
                 if (saveFileDialog1.ShowDialog() == DialogResult.OK)
                 {
-                  
-                    XDocument xdoc = new XDocument();
-                    XElement source = new XElement("source");                    
-                    XAttribute addressAttr = new XAttribute("address", dataGridView1.Rows[1].Cells[4].Value);//fix it!
-                    XAttribute speedAttr = new XAttribute("speed", "unknown");
-
-                    XElement line = new XElement("line");
-                    XAttribute directionAttr = new XAttribute("direction", "request");
-                    XAttribute addressLineAttr = new XAttribute("address", dataGridView1.Rows[1].Cells[4]);
-                    XAttribute commandAttr = new XAttribute("command", "46:Read EEPROM");
-                    XAttribute crcAttr = new XAttribute("crc","CA6C");
-
-                    XElement raw_frame = new XElement("raw_frame");
-                    raw_frame.Value = "";//fix it 
-
-                    // добавляем атрибут и элементы в первый элемент
-                    source.Add(addressAttr);
-                    source.Add(speedAttr);
-                    source.Add(line);
-                    
-
-                    line.Add(directionAttr);
-                    line.Add(addressLineAttr);
-                    line.Add(commandAttr);
-                    line.Add(crcAttr);
-                    line.Add(raw_frame);
-
-
-                    //raw_frame.Add(raw_frame);
-
-                    // создаем второй элемент
-                   
-                    // создаем корневой элемент
-                    XElement data = new XElement("data");
-                    XAttribute dataAttr = new XAttribute("source_type","com");
-                    // добавляем в корневой элемент                   
-                    data.Add(source);                    
-                    data.Add(dataAttr);
-                    //data.Add(galaxys5);
-
-                    // добавляем корневой элемент в документ                   
-                    xdoc.Add(data);
-                    
-                    //сохраняем документ
-                    xdoc.Save("Log.xml");
+                  //!!!
                 }
             }
            
