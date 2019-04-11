@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\ClassFileInfo\ClassFileInfo\bin\Debug\ClassFileInfo.exe.config
+C:\Users\User\source\repos\ClassFileInfo\ClassFileInfo\bin\Debug\ClassFileInfo.exe
+C:\Users\User\source\repos\ClassFileInfo\ClassFileInfo\bin\Debug\ClassFileInfo.pdb
+C:\Users\User\source\repos\ClassFileInfo\ClassFileInfo\obj\Debug\ClassFileInfo.csprojAssemblyReference.cache
+C:\Users\User\source\repos\ClassFileInfo\ClassFileInfo\obj\Debug\ClassFileInfo.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\ClassFileInfo\ClassFileInfo\obj\Debug\ClassFileInfo.exe
+C:\Users\User\source\repos\ClassFileInfo\ClassFileInfo\obj\Debug\ClassFileInfo.pdb

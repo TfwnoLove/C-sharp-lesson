@@ -12,6 +12,8 @@ namespace AccountingBooks
     public partial class Form1 : Form
     {
         string pathFile { get; set; }
+        
+
         public Form1()
         {
             InitializeComponent();
@@ -42,6 +44,7 @@ namespace AccountingBooks
                     DataSet dataSet = new DataSet();
                     adapter.Fill(dataSet);
                     dataGridView1.DataSource = dataSet.Tables[0];
+
                     conStr.Close();
                 }
             }
@@ -58,6 +61,7 @@ namespace AccountingBooks
         void SaveTable(DataGridView whatSave)
         {
             string path = pathFile;
+           
 
             Excel.Application excelapp = new Excel.Application();
             Excel.Workbook workbook = excelapp.Workbooks.Add();
