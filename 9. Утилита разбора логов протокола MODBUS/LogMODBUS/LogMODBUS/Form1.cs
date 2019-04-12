@@ -17,7 +17,7 @@ namespace LogMODBUS
     {
         OpenFileDialog DialogWin { get; set; }
         DirectoryInfo Direction { get; set; }
-
+        LogProperties logProp = new LogProperties();
         public Form1()
         {
             InitializeComponent();
@@ -80,7 +80,7 @@ namespace LogMODBUS
             
             IEnumerable<string> result = File.ReadLines(Direction.FullName);
 
-            LogProperties logProp = new LogProperties();
+           
 
             //заполняю хедер
             dataGridView1.Columns.Add(logProp.Number, "Number");
@@ -187,7 +187,53 @@ namespace LogMODBUS
             {
                 if (saveFileDialog1.ShowDialog() == DialogResult.OK)
                 {
-                  //!!!
+                    XDocument xdoc = new XDocument();
+                    XElement source = new XElement("source");
+                    XAttribute addressAttr = new XAttribute("address", logProp.Serial0);
+                    XAttribute speedAttr = new XAttribute("speed", "unknown");
+
+                    XElement line = new XElement("line");
+                    XAttribute directionAttr = new XAttribute("direction", "request");
+                    XAttribute addressLineAttr = new XAttribute("address", logProp.Adress);
+                    XAttribute commandAttr = new XAttribute("command", logProp.Command+ ":Read EEPROM");
+                    XAttribute crcAttr = new XAttribute("crc", logProp.Crc);
+
+                    XElement raw_frame = new XElement("raw_frame");
+                    raw_frame.Value = logProp.Raw_frame;
+                    XElement raw_data = new XElement("raw_data");
+                    raw_data.Value = logProp.Raw_data;
+
+                    // добавляем атрибут и элементы в первый элемент 
+                    source.Add(addressAttr);
+                    source.Add(speedAttr);
+                    source.Add(line);
+
+
+                    line.Add(directionAttr);
+                    line.Add(addressLineAttr);
+                    line.Add(commandAttr);
+                    line.Add(crcAttr);
+                    line.Add(raw_frame);
+                    line.Add(raw_data);
+
+
+                    //raw_frame.Add(raw_frame); 
+
+                    // создаем второй элемент 
+
+                    // создаем корневой элемент 
+                    XElement data = new XElement("data");
+                    XAttribute dataAttr = new XAttribute("source_type", "com");
+                    // добавляем в корневой элемент 
+                    data.Add(source);
+                    data.Add(dataAttr);
+                    //data.Add(galaxys5); 
+
+                    // добавляем корневой элемент в документ 
+                    xdoc.Add(data);
+
+                    //сохраняем документ 
+                    xdoc.Save("Log.xml");
                 }
             }
            
