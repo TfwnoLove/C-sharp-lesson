@@ -6,7 +6,8 @@ namespace ClassFile
     class Program
     {
         static void Main(string[] args)
-        {   //DirectoryInfo для работы с каталогами
+        {   
+            //DirectoryInfo для работы с каталогами
             DirectoryInfo dr = new DirectoryInfo(@"C:\temp");
             dr.Create();
 
