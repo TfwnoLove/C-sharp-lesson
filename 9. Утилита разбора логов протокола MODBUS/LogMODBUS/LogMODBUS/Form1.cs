@@ -2,13 +2,8 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
-using System.Xml;
 using System.Windows.Forms;
-using System.Text;
-using System.Xml.Serialization;
 using System.Xml.Linq;
-using System.Data;
-using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace LogMODBUS
@@ -208,7 +203,6 @@ namespace LogMODBUS
                     source.Add(speedAttr);
                     source.Add(line);
 
-
                     line.Add(directionAttr);
                     line.Add(addressLineAttr);
                     line.Add(commandAttr);
@@ -216,24 +210,15 @@ namespace LogMODBUS
                     line.Add(raw_frame);
                     line.Add(raw_data);
 
-
-                    //raw_frame.Add(raw_frame); 
-
-                    // создаем второй элемент 
-
-                    // создаем корневой элемент 
                     XElement data = new XElement("data");
-                    XAttribute dataAttr = new XAttribute("source_type", "com");
-                    // добавляем в корневой элемент 
+                    XAttribute dataAttr = new XAttribute("source_type", "com");                    
                     data.Add(source);
                     data.Add(dataAttr);
-                    //data.Add(galaxys5); 
-
-                    // добавляем корневой элемент в документ 
+                    
                     xdoc.Add(data);
 
                     //сохраняем документ 
-                    xdoc.Save("Log.xml");
+                    xdoc.Save(saveFileDialog1.FileName);
                 }
             }
            
